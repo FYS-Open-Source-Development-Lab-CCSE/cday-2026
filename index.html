@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improving Data Support in Open-Source Software | KSU C-Day 2026</title>
+  <meta name="description" content="Meet the Kennesaw State University CCSE C-Day 2026 research team behind native Krita (.kra) support in GIMP." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          colors: {
+            ksu: {
+              gold: '#FDBB30',
+              amber: '#D99B16',
+              dark: '#0B0F19'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #FAFAFA;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(253, 187, 48, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(15, 23, 42, 0.04) 0px, transparent 50%);
+    }
+  </style>
+</head>
+<body class="text-slate-900 font-sans antialiased selection:bg-ksu-gold/30 selection:text-slate-950 min-h-screen flex flex-col">
+
+  <!-- Main Centered Container -->
+  <main class="max-w-4xl w-full mx-auto px-6 py-12 sm:py-20 flex-grow">
+
+    <!-- 1. Concise Hero Section -->
+    <header class="text-center max-w-2xl mx-auto mb-16 sm:mb-20">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200/80 shadow-sm text-xs font-medium text-slate-600 mb-6">
+        <span class="w-2 h-2 rounded-full bg-ksu-gold"></span>
+        <span>KSU CCSE C-Day 2026 &bull; First-Year Scholars</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-950 leading-[1.15] mb-5">
+        Improving Data Support in Open-Source Software
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+        We built a native Python import plug-in enabling <strong>GIMP</strong> to decode and render multi-layer <strong>Krita (<code class="font-mono text-sm bg-slate-200/70 px-1.5 py-0.5 rounded text-slate-800">.kra</code>)</strong> project files without data loss. Our patch was submitted directly to the official upstream GNOME/GIMP codebase for community integration.
+      </p>
+
+      <!-- Upstream Merge Request CTA -->
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="https://gitlab.gnome.org/GNOME/gimp/-/merge_requests/3079" target="_blank" rel="noopener noreferrer"
+           class="group inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-slate-950 text-white text-sm font-medium shadow-md shadow-slate-950/10 hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-200">
+          <svg class="w-4 h-4 text-ksu-gold" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 0 0-.867 0L16.418 9.45H7.582L4.918 1.263a.455.455 0 0 0-.867 0L1.387 9.452.045 13.587a.924.924 0 0 0 .331 1.03L12 23.054l11.624-8.437a.924.924 0 0 0 .331-1.03"/>
+          </svg>
+          <span>GNOME/gimp Merge Request !3079</span>
+          <span class="text-slate-400 group-hover:translate-x-0.5 transition-transform" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- 2. Team Members Grid (Primary Focal Point) -->
+    <section aria-labelledby="team-heading" class="mb-14">
+      <div class="text-center mb-8">
+        <h2 id="team-heading" class="text-xs font-semibold uppercase tracking-widest text-slate-400">
+          Meet the Research Team
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+        <!-- ============================================================
+             TEAM MEMBER 1: ISA RAGLAND
+             - Replace 'isa.jpg' in src="" with a public image URL (if embedding in Google Sites) or local file
+             - Replace the href below with Isa's LinkedIn URL
+             ============================================================ -->
+        <article class="group bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-slate-200/50 hover:border-ksu-gold/60 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
+          <div class="relative mb-4">
+            <div class="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-ksu-gold/60 to-slate-200">
+              <img
+                src="isa.jpg"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300/0f172a/FDBB30?text=IR';"
+                alt="Isa Ragland"
+                class="w-full h-full object-cover rounded-full bg-slate-100"
+              />
+            </div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-slate-950 tracking-tight">Isa Ragland</h3>
+          <p class="text-xs font-medium text-slate-500 mt-0.5 mb-5">Undergraduate Researcher &bull; KSU</p>
+
+          <div class="mt-auto w-full flex items-center justify-center">
+            <!-- PASTE ISA'S LINKEDIN URL BELOW -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#0A66C2] text-white text-sm font-medium hover:bg-[#004182] transition-colors shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ============================================================
+             TEAM MEMBER 2: KRISH PATEL
+             - Replace 'krish.jpg' in src="" with a public image URL (if embedding in Google Sites) or local file
+             - Replace the href below with Krish's LinkedIn URL
+             ============================================================ -->
+        <article class="group bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-slate-200/50 hover:border-ksu-gold/60 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
+          <div class="relative mb-4">
+            <div class="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-ksu-gold/60 to-slate-200">
+              <img
+                src="krish.jpg"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300/0f172a/FDBB30?text=KP';"
+                alt="Krish Patel"
+                class="w-full h-full object-cover rounded-full bg-slate-100"
+              />
+            </div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-slate-950 tracking-tight">Krish Patel</h3>
+          <p class="text-xs font-medium text-slate-500 mt-0.5 mb-5">Undergraduate Researcher &bull; KSU</p>
+
+          <div class="mt-auto w-full flex items-center justify-center">
+            <!-- PASTE KRISH'S LINKEDIN URL BELOW -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#0A66C2] text-white text-sm font-medium hover:bg-[#004182] transition-colors shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- ============================================================
+             TEAM MEMBER 3: YAZAN ABDALLAH
+             - Replace 'yazan.jpg' in src="" with a public image URL (if embedding in Google Sites) or local file
+             - Replace the href below with Yazan's LinkedIn URL
+             ============================================================ -->
+        <article class="group bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-2xl p-6 text-center shadow-sm hover:shadow-xl hover:shadow-slate-200/50 hover:border-ksu-gold/60 hover:-translate-y-1 transition-all duration-300 flex flex-col items-center">
+          <div class="relative mb-4">
+            <div class="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-ksu-gold/60 to-slate-200">
+              <img
+                src="yazan.jpg"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300/0f172a/FDBB30?text=YA';"
+                alt="Yazan Abdallah"
+                class="w-full h-full object-cover rounded-full bg-slate-100"
+              />
+            </div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-slate-950 tracking-tight">Yazan Abdallah</h3>
+          <p class="text-xs font-medium text-slate-500 mt-0.5 mb-5">Undergraduate Researcher &bull; KSU</p>
+
+          <div class="mt-auto w-full flex items-center justify-center">
+            <!-- PASTE YAZAN'S LINKEDIN URL BELOW -->
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+               class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#0A66C2] text-white text-sm font-medium hover:bg-[#004182] transition-colors shadow-sm">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. Subtle Faculty Advisor Card (No Links) -->
+    <section aria-label="Faculty Advisor" class="max-w-xl mx-auto">
+      <div class="bg-white/70 backdrop-blur-sm border border-slate-200/80 rounded-2xl p-4 sm:px-6 sm:py-4 flex items-center justify-center sm:justify-start gap-3.5 shadow-sm">
+        <div class="w-11 h-11 rounded-full bg-slate-900 text-ksu-gold font-semibold text-sm flex items-center justify-center shrink-0">
+          NM
+        </div>
+        <div class="text-center sm:text-left">
+          <p class="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Faculty Advisor</p>
+          <h3 class="text-sm sm:text-base font-semibold text-slate-900">Dr. Nick Murphy</h3>
+          <p class="text-xs text-slate-500">College of Computing and Software Engineering, KSU</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="max-w-4xl w-full mx-auto px-6 py-8 border-t border-slate-200/70 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-2 text-center">
+    <p>Kennesaw State University &bull; CCSE Computing Showcase 2026</p>
+    <p>Special thanks to Amy Buddie &amp; the GIMP Development Team</p>
+  </footer>
+
+</body>
+</html>
